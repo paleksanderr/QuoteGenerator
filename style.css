@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,300&display=swap');
 
 html {
   box-sizing: border-box;
@@ -8,7 +9,7 @@ body {
   margin: 0;
   min-height: 100vh;
   color: black;
-  font-family: 'Macondo', cursive;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
   text-align: center;
@@ -37,7 +38,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 .fa-quote-left {
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 
 .quote-author {
@@ -80,6 +81,20 @@ color: #38a1f3;
 
 .fa-twitter {
   font-size: 1.5rem;
+}
+/* Loader */
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #333; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 /* Media Quere */
 @media screen and (max-width: 1000px) {
